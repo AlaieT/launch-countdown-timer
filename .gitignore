@@ -4,6 +4,7 @@ logs
 
 design
 node_modules
+coverage
 *.local
 
 # Editor directories and files
