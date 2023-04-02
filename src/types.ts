@@ -1,17 +1,21 @@
 export interface LaunchCountdownTimerProps {
   title: string;
-  startTime: number;
+  deadline: string;
   links: {
     name: string;
     image: string;
   }[];
+  background: {
+    starsImage: string;
+    hillsImage: string;
+  };
 }
 
 export interface TimerProps {
-  startTime: number;
+  deadline: string;
 }
 
 export interface DigitProps {
-  start: number;
+  digit: number;
   label: string;
 }

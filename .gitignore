@@ -2,6 +2,7 @@
 logs
 *.log
 
+dist
 design
 node_modules
 coverage
