@@ -6,18 +6,18 @@ import type { LaunchCountdownTimerProps } from "../../types";
 
 import styles from "../../styles/components/launchCountdownTimer.module.scss";
 
-const LaunchCountdownTimer = ({
+function LaunchCountdownTimer({
   deadline,
   title,
   links,
-  background: { starsImage, hillsImage },
-}: LaunchCountdownTimerProps) => {
+  background: { starsImage, hillsImage }
+}: LaunchCountdownTimerProps) {
   return (
-    <React.Fragment>
-      {/* <div id={styles.background}>
+    <>
+      <div id={styles.background}>
         <img src={starsImage} alt="bg-stars" />
         <img src={hillsImage} alt="bg-hills" />
-      </div> */}
+      </div>
       <header>
         <h1>{title}</h1>
       </header>
@@ -33,8 +33,8 @@ const LaunchCountdownTimer = ({
           ))}
         </ul>
       </footer>
-    </React.Fragment>
+    </>
   );
-};
+}
 
 export default LaunchCountdownTimer;

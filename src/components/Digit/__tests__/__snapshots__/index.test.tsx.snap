@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Digit testing... Snapshot testing 1`] = `
+<DocumentFragment>
+  <div
+    class="digit"
+  >
+    <div>
+      <div>
+        Real:24
+      </div>
+      <div>
+        Prev:24
+      </div>
+    </div>
+    <p>
+      day
+    </p>
+  </div>
+</DocumentFragment>
+`;

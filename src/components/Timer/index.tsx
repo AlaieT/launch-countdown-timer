@@ -9,7 +9,7 @@ const MINUTE = SECOND * 60;
 const HOUR = MINUTE * 60;
 const DAY = HOUR * 24;
 
-const Timer = ({ deadline }: TimerProps) => {
+function Timer({ deadline }: TimerProps) {
   const [time, setTime] = useState(Date.parse(deadline) - Date.now());
 
   useEffect(() => {
@@ -19,16 +19,16 @@ const Timer = ({ deadline }: TimerProps) => {
     );
 
     return () => clearInterval(interval);
-  }, []);
+  }, [deadline]);
 
   return (
-    <React.Fragment>
-      <Digit label="days" digit={Math.floor(time / DAY)}></Digit>
-      <Digit label="hours" digit={Math.floor((time / HOUR) % 24)}></Digit>
-      <Digit label="minuts" digit={Math.floor((time / MINUTE) % 60)}></Digit>
-      <Digit label="seconds" digit={Math.floor((time / SECOND) % 60)}></Digit>
-    </React.Fragment>
+    <>
+      <Digit label="days" digit={Math.floor(time / DAY)} />
+      <Digit label="hours" digit={Math.floor((time / HOUR) % 24)} />
+      <Digit label="minuts" digit={Math.floor((time / MINUTE) % 60)} />
+      <Digit label="seconds" digit={Math.floor((time / SECOND) % 60)} />
+    </>
   );
-};
+}
 
 export default Timer;

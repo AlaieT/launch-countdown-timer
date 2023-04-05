@@ -6,7 +6,7 @@ import type { LaunchCountdownTimerProps } from "./types";
 
 import "./styles/global.scss";
 
-const App = () => {
+function App() {
   const [pageData, setPageData] = useState<null | LaunchCountdownTimerProps>(
     null
   );
@@ -15,7 +15,7 @@ const App = () => {
     const getPageData = async () => {
       fetch("/data.json", {
         method: "GET",
-        mode: "same-origin",
+        mode: "same-origin"
       })
         .then((response) => response.json())
         .then((data) => setPageData(data));
@@ -26,11 +26,14 @@ const App = () => {
     return () => undefined;
   }, []);
 
-  return (
-    <React.Fragment>
-      {pageData && <LaunchCountdownTimer {...pageData} />}
-    </React.Fragment>
-  );
-};
+  return pageData ? (
+    <LaunchCountdownTimer
+      background={pageData.background}
+      deadline={pageData.deadline}
+      links={pageData.links}
+      title={pageData.title}
+    />
+  ) : null;
+}
 
 export default App;

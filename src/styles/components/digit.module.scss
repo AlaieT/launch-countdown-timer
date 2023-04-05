@@ -1,5 +1,140 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+%circle {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  width: 6px;
+  height: 12px;
+  background-color: rgb(24 24 30);
+}
+
+%part {
+  height: 50%;
+  overflow: hidden;
+
+  & p {
+    position: absolute;
+    width: 100%;
+    height: 200%;
+
+    @include flex("center&center");
+  }
+}
+
+%top {
+  width: 100%;
+  color: rgb(217 71 103);
+  background-color: rgb(39 39 59);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+%bottom {
+  width: 100%;
+  color: rgb(255 85 121);
+  background-color: rgb(45 47 69);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+
+  & p {
+    bottom: 0;
+  }
+}
+
+@keyframes flip {
+  from {
+    transform: rotateX(0);
+  }
+
+  to {
+    transform: rotateX(-180deg);
+  }
+}
+
 .digit {
-  &.animated {
-    color: red;
+  width: max-content;
+  height: max-content;
+  color: rgb(117 116 143);
+
+  @include flex("center&center", "col");
+
+  & .box {
+    position: relative;
+    width: 150px;
+    height: 140px;
+    font-size: 72px;
+    box-shadow: 0 8px 0 0 rgb(24 24 30);
+    border-radius: 8px;
+    perspective: 500px;
+
+    @include flex("center&center", "col");
+
+    &::before {
+      @extend %circle;
+
+      left: 0;
+      border-radius: 0 12px 12px 0;
+    }
+
+    &::after {
+      @extend %circle;
+
+      right: 0;
+      border-radius: 12px 0 0 12px;
+    }
+
+    & .top,
+    .bottom {
+      @extend %part;
+
+      position: relative;
+    }
+
+    & .top {
+      @extend %top;
+    }
+
+    & .bottom {
+      @extend %bottom;
+    }
+
+    & .middle {
+      position: absolute;
+      top: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+
+      &.animated {
+        animation: 510ms flip ease-in-out;
+      }
+
+      & .front,
+      .back {
+        @extend %part;
+
+        position: absolute;
+        backface-visibility: hidden;
+      }
+
+      & .front {
+        @extend %top;
+      }
+
+      & .back {
+        @extend %bottom;
+
+        transform: rotateX(180deg);
+      }
+    }
+  }
+
+  & .label {
+    margin: 24px 0 0;
+    text-transform: uppercase;
+    letter-spacing: 4px;
   }
 }
