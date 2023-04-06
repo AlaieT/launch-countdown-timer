@@ -13,7 +13,7 @@ function App() {
 
   useEffect(() => {
     const getPageData = async () => {
-      fetch("/data.json", {
+      fetch(`${import.meta.env.BASE_URL}data.json`, {
         method: "GET",
         mode: "same-origin"
       })

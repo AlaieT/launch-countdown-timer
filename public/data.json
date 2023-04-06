@@ -1,20 +1,11 @@
 {
   "title": "WE'RE LAUNCHING SOON",
   "deadline": "April 30, 2023",
-  "links": [
-    {
-      "name": "facebook",
-      "image": "/images/icon-facebook.svg"
-    },
-    {
-      "name": "pinterest",
-      "image": "/images/icon-pinterest.svg"
-    },
-    {
-      "name": "instagram",
-      "image": "/images/icon-instagram.svg"
-    }
-  ],
+  "links": {
+    "facbook": "",
+    "pinterest": "",
+    "instagram": ""
+  },
   "background": {
     "starsImage": "/images/bg-stars.svg",
     "hillsImage": "/images/pattern-hills.svg"

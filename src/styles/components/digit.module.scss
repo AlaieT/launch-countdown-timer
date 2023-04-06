@@ -7,7 +7,7 @@
   z-index: 2;
   width: 6px;
   height: 12px;
-  background-color: rgb(24 24 30);
+  background-color: $shadow-color;
 }
 
 %part {
@@ -25,16 +25,16 @@
 
 %top {
   width: 100%;
-  color: rgb(217 71 103);
-  background-color: rgb(39 39 59);
+  color: $digit-top-text-color;
+  background-color: $digit-top-color;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
 %bottom {
   width: 100%;
-  color: rgb(255 85 121);
-  background-color: rgb(45 47 69);
+  color: $digit-bottom-text-color;
+  background-color: $digit-bottom-color;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 
@@ -54,6 +54,7 @@
 }
 
 .digit {
+  user-select: none;
   width: max-content;
   height: max-content;
   color: rgb(117 116 143);
@@ -65,7 +66,7 @@
     width: 150px;
     height: 140px;
     font-size: 72px;
-    box-shadow: 0 8px 0 0 rgb(24 24 30);
+    box-shadow: 0 8px 0 0 $shadow-color;
     border-radius: 8px;
     perspective: 500px;
 
@@ -136,5 +137,41 @@
     margin: 24px 0 0;
     text-transform: uppercase;
     letter-spacing: 4px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .digit {
+    & .box {
+      width: 70px;
+      height: 66px;
+      font-size: 36px;
+      box-shadow: 0 4px 0 0 $shadow-color;
+
+      &::before {
+        @extend %circle;
+
+        width: 3px;
+        height: 6px;
+        left: 0;
+        border-radius: 0 6px 6px 0;
+      }
+
+      &::after {
+        @extend %circle;
+
+        width: 3px;
+        height: 6px;
+        right: 0;
+        border-radius: 6px 0 0 6px;
+      }
+    }
+
+    & .label {
+      margin: 14px 0 0;
+      font-size: 6px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+    }
   }
 }
