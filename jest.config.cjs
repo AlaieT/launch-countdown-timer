@@ -1,8 +1,8 @@
-/** @type {import('ts-jest').JestConfigWithTsJest} */
+/** @type {import('jest').Config} */
 module.exports = {
   testEnvironment: "jsdom",
   collectCoverage: true,
-  rootDir: "./",
+  rootDir: "./src",
   coverageProvider: "v8",
   collectCoverageFrom: [
     "**/*.{ts,tsx}",
@@ -14,16 +14,19 @@ module.exports = {
   moduleNameMapper: {
     "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy",
 
-    "^.+\\.(css|sass|scss)$": "<rootDir>/src/__mocks__/styleMock.ts",
+    "\\.svg$": "<rootDir>/__mocks__/svg.ts",
 
-    "^.+\\.(png|jpg|jpeg|gif|webp|avif|ico|bmp|svg)$/i":
-      "<rootDir>/src/__mocks__/fileMock.ts",
-
-    "^@/components/(.*)$": "<rootDir>/src/components/$1"
+    "^@/components/(.*)$": "<rootDir>/components/$1"
   },
   transform: {
     "^.+\\.(t|j)sx?$": "@swc/jest"
   },
-  testPathIgnorePatterns: ["<rootDir>/node_modules/"],
-  transformIgnorePatterns: ["/node_modules/",]
+  testPathIgnorePatterns: ["/node_modules/"],
+  transformIgnorePatterns: ["/node_modules/"],
+
+  modulePathIgnorePatterns: [
+    "<rootDir>/app.ts",
+    "<rootDir>/main.ts",
+    "<rootDir>/types.ts"
+  ]
 };
