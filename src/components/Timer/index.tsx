@@ -9,14 +9,18 @@ const MINUTE = SECOND * 60;
 const HOUR = MINUTE * 60;
 const DAY = HOUR * 24;
 
+const leftTime = (deadline: string): number => {
+  const diff = Date.parse(deadline) - Date.now();
+  return diff > 0 ? diff : 0;
+};
+
 function Timer({ deadline }: TimerProps) {
-  const [time, setTime] = useState(Date.parse(deadline) - Date.now());
+  const [time, setTime] = useState(leftTime(deadline));
 
   useEffect(() => {
-    const interval = setInterval(
-      () => setTime(Date.parse(deadline) - Date.now()),
-      1000
-    );
+    const interval = setInterval(() => {
+      setTime(leftTime(deadline));
+    }, 1000);
 
     return () => clearInterval(interval);
   }, [deadline]);
