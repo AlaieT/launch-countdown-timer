@@ -9,6 +9,18 @@ exports[`LaunchCountdownTimer testing... Snapshot testing 1`] = `
   </header>
   <main>
     <div
+      id="background"
+    >
+      <img
+        alt="bg-stars"
+        src="/"
+      />
+      <img
+        alt="bg-hills"
+        src="/"
+      />
+    </div>
+    <div
       class="digit"
     >
       <div
@@ -112,7 +124,7 @@ exports[`LaunchCountdownTimer testing... Snapshot testing 1`] = `
           class="top"
         >
           <p>
-            19
+            08
           </p>
         </div>
         <div
@@ -122,14 +134,14 @@ exports[`LaunchCountdownTimer testing... Snapshot testing 1`] = `
             class="front"
           >
             <p>
-              19
+              08
             </p>
           </div>
           <div
             class="back"
           >
             <p>
-              19
+              08
             </p>
           </div>
         </div>
@@ -137,7 +149,7 @@ exports[`LaunchCountdownTimer testing... Snapshot testing 1`] = `
           class="bottom"
         >
           <p>
-            19
+            08
           </p>
         </div>
       </div>
@@ -159,7 +171,7 @@ exports[`LaunchCountdownTimer testing... Snapshot testing 1`] = `
           class="top"
         >
           <p>
-            07
+            36
           </p>
         </div>
         <div
@@ -169,14 +181,14 @@ exports[`LaunchCountdownTimer testing... Snapshot testing 1`] = `
             class="front"
           >
             <p>
-              07
+              36
             </p>
           </div>
           <div
             class="back"
           >
             <p>
-              07
+              36
             </p>
           </div>
         </div>
@@ -184,7 +196,7 @@ exports[`LaunchCountdownTimer testing... Snapshot testing 1`] = `
           class="bottom"
         >
           <p>
-            07
+            36
           </p>
         </div>
       </div>
@@ -231,17 +243,5 @@ exports[`LaunchCountdownTimer testing... Snapshot testing 1`] = `
       </li>
     </ul>
   </footer>
-  <div
-    id="background"
-  >
-    <img
-      alt="bg-stars"
-      src="/"
-    />
-    <img
-      alt="bg-hills"
-      src="/"
-    />
-  </div>
 </DocumentFragment>
 `;
