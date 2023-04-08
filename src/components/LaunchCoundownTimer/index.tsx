@@ -27,17 +27,32 @@ function LaunchCountdownTimer({
       <footer>
         <ul>
           <li>
-            <a href={links.facbook} target="_blank" rel="noreferrer">
+            <a
+              href={links.facbook}
+              aria-label="facebook link"
+              target="_blank"
+              rel="noreferrer"
+            >
               <IconFacebook />
             </a>
           </li>
           <li>
-            <a href={links.pinterest} target="_blank" rel="noreferrer">
+            <a
+              href={links.pinterest}
+              aria-label="pinterest link"
+              target="_blank"
+              rel="noreferrer"
+            >
               <IconPinterest />
             </a>
           </li>
           <li>
-            <a href={links.instagram} target="_blank" rel="noreferrer">
+            <a
+              href={links.instagram}
+              aria-label="instagram link"
+              target="_blank"
+              rel="noreferrer"
+            >
               <IconInstagram />
             </a>
           </li>

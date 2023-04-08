@@ -18,7 +18,7 @@ exports[`LaunchCountdownTimer testing... Snapshot testing 1`] = `
           class="top"
         >
           <p>
-            23
+            21
           </p>
         </div>
         <div
@@ -28,14 +28,14 @@ exports[`LaunchCountdownTimer testing... Snapshot testing 1`] = `
             class="front"
           >
             <p>
-              23
+              21
             </p>
           </div>
           <div
             class="back"
           >
             <p>
-              23
+              21
             </p>
           </div>
         </div>
@@ -43,7 +43,7 @@ exports[`LaunchCountdownTimer testing... Snapshot testing 1`] = `
           class="bottom"
         >
           <p>
-            23
+            21
           </p>
         </div>
       </div>
@@ -65,7 +65,7 @@ exports[`LaunchCountdownTimer testing... Snapshot testing 1`] = `
           class="top"
         >
           <p>
-            11
+            18
           </p>
         </div>
         <div
@@ -75,14 +75,14 @@ exports[`LaunchCountdownTimer testing... Snapshot testing 1`] = `
             class="front"
           >
             <p>
-              11
+              18
             </p>
           </div>
           <div
             class="back"
           >
             <p>
-              11
+              18
             </p>
           </div>
         </div>
@@ -90,7 +90,7 @@ exports[`LaunchCountdownTimer testing... Snapshot testing 1`] = `
           class="bottom"
         >
           <p>
-            11
+            18
           </p>
         </div>
       </div>
@@ -112,7 +112,7 @@ exports[`LaunchCountdownTimer testing... Snapshot testing 1`] = `
           class="top"
         >
           <p>
-            27
+            19
           </p>
         </div>
         <div
@@ -122,14 +122,14 @@ exports[`LaunchCountdownTimer testing... Snapshot testing 1`] = `
             class="front"
           >
             <p>
-              27
+              19
             </p>
           </div>
           <div
             class="back"
           >
             <p>
-              27
+              19
             </p>
           </div>
         </div>
@@ -137,7 +137,7 @@ exports[`LaunchCountdownTimer testing... Snapshot testing 1`] = `
           class="bottom"
         >
           <p>
-            27
+            19
           </p>
         </div>
       </div>
@@ -159,7 +159,7 @@ exports[`LaunchCountdownTimer testing... Snapshot testing 1`] = `
           class="top"
         >
           <p>
-            53
+            07
           </p>
         </div>
         <div
@@ -169,14 +169,14 @@ exports[`LaunchCountdownTimer testing... Snapshot testing 1`] = `
             class="front"
           >
             <p>
-              53
+              07
             </p>
           </div>
           <div
             class="back"
           >
             <p>
-              53
+              07
             </p>
           </div>
         </div>
@@ -184,7 +184,7 @@ exports[`LaunchCountdownTimer testing... Snapshot testing 1`] = `
           class="bottom"
         >
           <p>
-            53
+            07
           </p>
         </div>
       </div>
@@ -201,6 +201,7 @@ exports[`LaunchCountdownTimer testing... Snapshot testing 1`] = `
     <ul>
       <li>
         <a
+          aria-label="facebook link"
           href=""
           rel="noreferrer"
           target="_blank"
@@ -210,6 +211,7 @@ exports[`LaunchCountdownTimer testing... Snapshot testing 1`] = `
       </li>
       <li>
         <a
+          aria-label="pinterest link"
           href=""
           rel="noreferrer"
           target="_blank"
@@ -219,6 +221,7 @@ exports[`LaunchCountdownTimer testing... Snapshot testing 1`] = `
       </li>
       <li>
         <a
+          aria-label="instagram link"
           href=""
           rel="noreferrer"
           target="_blank"
