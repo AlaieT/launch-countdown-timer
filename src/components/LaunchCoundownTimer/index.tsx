@@ -22,6 +22,10 @@ function LaunchCountdownTimer({
         <h1>{title}</h1>
       </header>
       <main>
+        <div id={styles.background}>
+          <img src={starsImage} alt="bg-stars" />
+          <img src={hillsImage} alt="bg-hills" />
+        </div>
         <Timer deadline={deadline} />
       </main>
       <footer>
@@ -58,10 +62,6 @@ function LaunchCountdownTimer({
           </li>
         </ul>
       </footer>
-      <div id={styles.background}>
-        <img src={starsImage} alt="bg-stars" />
-        <img src={hillsImage} alt="bg-hills" />
-      </div>
     </>
   );
 }
