@@ -2,7 +2,7 @@ export interface LaunchCountdownTimerProps {
   title: string;
   deadline: string;
   links: {
-    facbook: string;
+    facebook: string;
     pinterest: string;
     instagram: string;
   };

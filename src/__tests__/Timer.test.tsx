@@ -1,7 +1,7 @@
 import React from "react";
 import { render } from "@testing-library/react";
 
-import Timer from "..";
+import Timer from "../components/Timer";
 
 describe("Timer testing...", () => {
   const props = {

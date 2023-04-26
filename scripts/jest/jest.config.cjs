@@ -2,21 +2,19 @@
 module.exports = {
   testEnvironment: "jsdom",
   collectCoverage: true,
-  rootDir: "./src",
+  rootDir: "../../",
   coverageProvider: "v8",
   collectCoverageFrom: [
     "**/*.{ts,tsx}",
     "!**/*.d.ts",
     "!**/node_modules/**",
-    "!<rootDir>/*.config.js",
-    "!<rootDir>/coverage/**"
+    "!<rootDir>/src/*.config.js",
+    "!<rootDir>/src/coverage/**"
   ],
   moduleNameMapper: {
     "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy",
 
-    "\\.svg$": "<rootDir>/__mocks__/svg.ts",
-
-    "^@/components/(.*)$": "<rootDir>/components/$1"
+    "\\.svg$": "<rootDir>/src/__mocks__/svg.ts"
   },
   transform: {
     "^.+\\.(t|j)sx?$": "@swc/jest"
@@ -25,8 +23,9 @@ module.exports = {
   transformIgnorePatterns: ["/node_modules/"],
 
   modulePathIgnorePatterns: [
-    "<rootDir>/app.ts",
-    "<rootDir>/main.ts",
-    "<rootDir>/types.ts"
+    "<rootDir>/scripts/vite/vite.config.ts",g
+    "<rootDir>/src/app.ts",
+    "<rootDir>/src/main.ts",
+    "<rootDir>/src/types.ts"
   ]
 };

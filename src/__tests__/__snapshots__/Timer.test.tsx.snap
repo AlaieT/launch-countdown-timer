@@ -12,7 +12,7 @@ exports[`Timer testing... Snapshot testing 1`] = `
         class="top"
       >
         <p>
-          21
+          03
         </p>
       </div>
       <div
@@ -22,14 +22,14 @@ exports[`Timer testing... Snapshot testing 1`] = `
           class="front"
         >
           <p>
-            21
+            03
           </p>
         </div>
         <div
           class="back"
         >
           <p>
-            21
+            03
           </p>
         </div>
       </div>
@@ -37,7 +37,7 @@ exports[`Timer testing... Snapshot testing 1`] = `
         class="bottom"
       >
         <p>
-          21
+          03
         </p>
       </div>
     </div>
@@ -59,7 +59,7 @@ exports[`Timer testing... Snapshot testing 1`] = `
         class="top"
       >
         <p>
-          18
+          11
         </p>
       </div>
       <div
@@ -69,14 +69,14 @@ exports[`Timer testing... Snapshot testing 1`] = `
           class="front"
         >
           <p>
-            18
+            11
           </p>
         </div>
         <div
           class="back"
         >
           <p>
-            18
+            11
           </p>
         </div>
       </div>
@@ -84,7 +84,7 @@ exports[`Timer testing... Snapshot testing 1`] = `
         class="bottom"
       >
         <p>
-          18
+          11
         </p>
       </div>
     </div>
@@ -106,7 +106,7 @@ exports[`Timer testing... Snapshot testing 1`] = `
         class="top"
       >
         <p>
-          08
+          14
         </p>
       </div>
       <div
@@ -116,14 +116,14 @@ exports[`Timer testing... Snapshot testing 1`] = `
           class="front"
         >
           <p>
-            08
+            14
           </p>
         </div>
         <div
           class="back"
         >
           <p>
-            08
+            14
           </p>
         </div>
       </div>
@@ -131,7 +131,7 @@ exports[`Timer testing... Snapshot testing 1`] = `
         class="bottom"
       >
         <p>
-          08
+          14
         </p>
       </div>
     </div>
@@ -153,7 +153,7 @@ exports[`Timer testing... Snapshot testing 1`] = `
         class="top"
       >
         <p>
-          35
+          31
         </p>
       </div>
       <div
@@ -163,14 +163,14 @@ exports[`Timer testing... Snapshot testing 1`] = `
           class="front"
         >
           <p>
-            35
+            31
           </p>
         </div>
         <div
           class="back"
         >
           <p>
-            35
+            31
           </p>
         </div>
       </div>
@@ -178,7 +178,7 @@ exports[`Timer testing... Snapshot testing 1`] = `
         class="bottom"
       >
         <p>
-          35
+          31
         </p>
       </div>
     </div>

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`LaunchCountdownTimer testing... Snapshot testing 1`] = `
+exports[`LaunchCountdownTimer correct render should match snapshot 1`] = `
 <DocumentFragment>
   <header>
     <h1>
@@ -30,7 +30,7 @@ exports[`LaunchCountdownTimer testing... Snapshot testing 1`] = `
           class="top"
         >
           <p>
-            21
+            03
           </p>
         </div>
         <div
@@ -40,14 +40,14 @@ exports[`LaunchCountdownTimer testing... Snapshot testing 1`] = `
             class="front"
           >
             <p>
-              21
+              03
             </p>
           </div>
           <div
             class="back"
           >
             <p>
-              21
+              03
             </p>
           </div>
         </div>
@@ -55,7 +55,7 @@ exports[`LaunchCountdownTimer testing... Snapshot testing 1`] = `
           class="bottom"
         >
           <p>
-            21
+            03
           </p>
         </div>
       </div>
@@ -77,7 +77,7 @@ exports[`LaunchCountdownTimer testing... Snapshot testing 1`] = `
           class="top"
         >
           <p>
-            18
+            11
           </p>
         </div>
         <div
@@ -87,14 +87,14 @@ exports[`LaunchCountdownTimer testing... Snapshot testing 1`] = `
             class="front"
           >
             <p>
-              18
+              11
             </p>
           </div>
           <div
             class="back"
           >
             <p>
-              18
+              11
             </p>
           </div>
         </div>
@@ -102,7 +102,7 @@ exports[`LaunchCountdownTimer testing... Snapshot testing 1`] = `
           class="bottom"
         >
           <p>
-            18
+            11
           </p>
         </div>
       </div>
@@ -124,7 +124,7 @@ exports[`LaunchCountdownTimer testing... Snapshot testing 1`] = `
           class="top"
         >
           <p>
-            08
+            14
           </p>
         </div>
         <div
@@ -134,14 +134,14 @@ exports[`LaunchCountdownTimer testing... Snapshot testing 1`] = `
             class="front"
           >
             <p>
-              08
+              14
             </p>
           </div>
           <div
             class="back"
           >
             <p>
-              08
+              14
             </p>
           </div>
         </div>
@@ -149,7 +149,7 @@ exports[`LaunchCountdownTimer testing... Snapshot testing 1`] = `
           class="bottom"
         >
           <p>
-            08
+            14
           </p>
         </div>
       </div>
@@ -171,7 +171,7 @@ exports[`LaunchCountdownTimer testing... Snapshot testing 1`] = `
           class="top"
         >
           <p>
-            36
+            30
           </p>
         </div>
         <div
@@ -181,14 +181,14 @@ exports[`LaunchCountdownTimer testing... Snapshot testing 1`] = `
             class="front"
           >
             <p>
-              36
+              30
             </p>
           </div>
           <div
             class="back"
           >
             <p>
-              36
+              30
             </p>
           </div>
         </div>
@@ -196,7 +196,7 @@ exports[`LaunchCountdownTimer testing... Snapshot testing 1`] = `
           class="bottom"
         >
           <p>
-            36
+            30
           </p>
         </div>
       </div>

@@ -4,9 +4,9 @@ import Timer from "../Timer";
 
 import type { LaunchCountdownTimerProps } from "../../types";
 
-import { ReactComponent as IconFacebook } from "../../images/icon-facebook.svg";
-import { ReactComponent as IconPinterest } from "../../images/icon-pinterest.svg";
-import { ReactComponent as IconInstagram } from "../../images/icon-instagram.svg";
+import { ReactComponent as IconFacebook } from "../../assets/images/icon-facebook.svg";
+import { ReactComponent as IconPinterest } from "../../assets/images/icon-pinterest.svg";
+import { ReactComponent as IconInstagram } from "../../assets/images/icon-instagram.svg";
 
 import styles from "../../styles/components/launchCountdownTimer.module.scss";
 
@@ -32,7 +32,7 @@ function LaunchCountdownTimer({
         <ul>
           <li>
             <a
-              href={links.facbook}
+              href={links.facebook}
               aria-label="facebook link"
               target="_blank"
               rel="noreferrer"

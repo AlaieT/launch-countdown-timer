@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import LaunchCountdownTimer from "./components/LaunchCoundownTimer";
+import LaunchCountdownTimer from "./components/LaunchCountdownTimer";
 
 import type { LaunchCountdownTimerProps } from "./types";
 
@@ -13,7 +13,7 @@ function App() {
 
   useEffect(() => {
     const getPageData = async () => {
-      fetch(`${import.meta.env.BASE_URL}data.json`, {
+      fetch(`${import.meta.env.BASE_URL}data/pagePropsLaunchCountdownTimer.json`, {
         method: "GET",
         mode: "same-origin"
       })
