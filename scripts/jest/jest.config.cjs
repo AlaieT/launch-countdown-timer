@@ -23,7 +23,7 @@ module.exports = {
   transformIgnorePatterns: ["/node_modules/"],
 
   modulePathIgnorePatterns: [
-    "<rootDir>/scripts/vite/vite.config.ts",g
+    "<rootDir>/scripts/vite/vite.config.ts",
     "<rootDir>/src/app.ts",
     "<rootDir>/src/main.ts",
     "<rootDir>/src/types.ts"
